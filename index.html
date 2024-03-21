@@ -1,128 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-  <title>Компільований документ</title>
-  <style>
-    /* Ваші стилі тут */
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      padding: 15px;
-    }
-
-    th {
-      text-align: left;
-      color: white;
-      background-color: black;
-    }
-
-    table {
-      width: 100%;
-      border-spacing: 5px;
-    }
-
-    #t01 tr:nth-child(even) {
-      background-color: #eee;
-    }
-
-    #t01 tr:nth-child(odd) {
-      background-color: #fff;
-    }
-
-    th, td {
-      background-color: #96D4D4;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Об'єднаний документ HTML</title>
+<style>
+/* Стилі таблиць */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+th {
+  text-align: left;
+  background-color: #96D4D4;
+}
+table {
+  width: 100%;
+  border-spacing: 5px;
+}
+#t01 {
+  background-color: #f1f1c1;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 th {
+  color: white;
+  background-color: black;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+tr:hover {
+  background-color: #D6EEEE;
+}
+/* Стилі списків */
+ul, ol {
+  list-style-type: none;
+}
+ul {
+  overflow: hidden;
+  background-color: #333333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111111;
+}
+/* Загальні стилі */
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
 </head>
 <body>
 
-<h1>Мій перший заголовок</h1>
-<p>Мій перший параграф.</p>
+<h1>Об'єднаний документ HTML</h1>
 
-<h1>Це заголовок</h1>
-<p>Це параграф.</p>
+<!-- Перша таблиця -->
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
 
-<h1>Мій перший заголовок</h1>
-<p>Мій перший параграф.</p>
+<!-- Друга таблиця -->
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
 
-<h1>Це заголовок 1</h1>
-<h2>Це заголовок 2</h2>
-<h3>Це заголовок 3</h3>
-<p>Це параграф.</p>
-<p>Це інший параграф.</p>
-<a href="https://w3schoolsua.github.io/">Це посилання</a>
-<img src="../images/w3schools.jpg" alt="W3Schools" width="104" height="142">
-<button>Натисніть мене</button>
-<h2>Невпорядкований список HTML</h2>
+<!-- Третя таблиця -->
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<!-- Четверта таблиця -->
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<!-- П'ята таблиця -->
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Шоста таблиця -->
+<table style="width:100%">
+  <tr>
+    <th>Ім'я</th>
+    <th>Прізвище</th>
+    <th>Вік</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Сьома таблиця -->
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>30</td>
+  </tr>
+</table>
+
+<!-- Вставка списку -->
 <ul>
-  <li>Кава</li>
-  <li>Чай</li>
-  <li>Молоко</li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
 </ul>
 
-<h2>Впорядкований список HTML</h2>
-<ol>
-  <li>Кава</li>
-  <li>Чай</li>
-  <li>Молоко</li>
-</ol>
-
-<p>Мій перший параграф.</p>
-
-<p>Мій перший параграф.</p>
-
-<p>Мій перший параграф.</p>
-
-<p>Це параграф</p>
-<p>Це параграф</p>
-
-<p>Це параграф.</p>
-<p>Це інший параграф.</p>
-<p>Це параграф.</p>
-<p>Це інший параграф.</p>
-<p>Це параграф.</p>
-<p>Це інший параграф.</p>
-<p>Цей<br>параграф<br>має розриви рядка.</p>
-<p>
-  Зродились ми великої години,
-
-  З пожеж війни і з полум'я вогнів,
-
-  Плекав нас біль по втраті України,
-
-  Кормив нас гнів і злість на ворогів.
-</p>
-<pre>
-  І ось ідем у бою життєвому.
-
-  Міцні, тверді, незламні мов граніт,
-
-  Бо плач не дав свободи ще нікому,
-
-  А хто борець, той здобуває світ.
-</pre>
-
-<a href="url">Текст посилання</a>
-
-<a href="https://www.w3schools.com/html/">HTML уроки для початківців онлайн</a>
-<a href="html_images.html">HTML Зображення</a>
-
-<a href="https://www.w3schools.com/" target="_blank">Відвідайте W3Schools!</a>
-<a href="https://www.w3schools.com/html/" target="_top">HTML5 Підручник!</a>
-<a href="index.html">
-  <img src="smiley.gif" alt="HTML уроки для початківців" style="width:42px;height:42px;border:0;">
-</a>
-<a href="https://www.w3schools.com/html/" title="Перейти на уроки по HTML для початківців">Уроки по HTML для початківців</a>
-<h2 id="C4">Розділ 4</h2>
-<a href="#C4">Перейти до розділу 4</a>
-<a href="html_demo.html#C4">Перейти до розділу 4</a>
-<a href="https://w3schoolsua.github.io/html/index.html">HTML підручник</a>
-<a href="../html/index.html">HTML підручник</a>
-<a href="index.html">HTML підручник</a>
-
-<img src="pic_trulli.jpg" alt="Italian Trulli">
-<img src="url">
-<img src="img_chania.jpg" alt="Flowers in Chania">
-<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<!-- Вставка параграфу -->
+<p>This is a paragraph.</p>
 </body>
 </html>
